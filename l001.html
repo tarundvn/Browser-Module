@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<!-- INTRODUCTION TO HTML & CSS -->
+<head>
+    <title>Pepcoding</title>
+    <style>
+    /* Simple Selectors : name(div,form,h1,p,div,a) + id + class */
+        /* name */
+        /* h1 {
+            color: red;
+        }
+
+        p {
+            background-color: lightblue;
+        } */
+
+        /* id */
+        /* #unique {
+            text-decoration: underline;
+        } */
+
+        /* class */
+        /* .common {
+            background-color: lightgreen;
+        } */
+    /* Combinator : space(desecendent) + >(immediate) + "+"(immediate sibling) + "~"all siblings */
+        /* space */
+        /* .common p{
+            color: lightcoral;
+        } */
+        /* immediate > */
+        /* .common > p{
+            background-color: lightgreen;
+        } */
+        /* targets immediate sibling */
+        /* .common + div{
+            color: red;
+        } */
+        /* .common ~ div{
+            background-color: yellow;
+        } */
+    /* Atrribute : form, */
+        /* label[for]{
+            color:pink;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="common common2">
+        <p>Hello!!!</p>
+        <div class="something1">Something</div>
+        <div class="something2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="something3"></div>
+        <p>Hello!!!</p>
+    </div>
+    <div class="sibling">Im sibling</div>
+
+    <!-- Headings -->
+    <h1>Hello Everyone</h1>
+    <h2>Hello Everyone</h2>
+    <h3>Hello Everyone</h3>
+
+    <!-- Paragraph -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repudiandae, voluptatibus in laudantium aliquam
+        eveniet earum architecto iure unde debitis facere explicabo maiores excepturi natus laboriosam, eligendi et
+        libero placeat!
+    </p>
+
+    <!-- Anchor -->
+    <a href="https://www.google.com">Open Google</a>
+
+    <!-- Divison -->
+    <div id="unique">
+        Hello
+        <p>
+            Pepcoder
+        </p>
+    </div>
+
+    <div></div>
+    <div class="common">Hello</div>
+    <div></div>
+    <div class="common2">Diff hello</div>
+
+    <!-- Unorderd List -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <!-- Ordered List -->
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+
+    <span>Content Filling Tag like P tag</span>
+    <img width="50" src="" alt="SomeImage">
+
+    <!-- Form -->
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email">
+
+    <label for="password">Password</label>
+    <input type="password" id="password">
+
+    <label for="phone">Phone</label>
+    <input type="number" id="phone">
+
+</body>
+
+</html>
